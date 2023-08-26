@@ -10,3 +10,7 @@ services:
       - 19510:8080
     volumes:
       - ./sdns.conf:/sdns.conf
+  application:
+   dns:
+    - 8.8.8.8
+    - 4.4.4.4
