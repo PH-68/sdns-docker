@@ -1,0 +1,12 @@
+version: "2.1"
+services:
+  sdns:
+    image: c1982/sdns
+    container_name: sdns
+    restart: unless-stopped
+    ports:
+      - 53:53
+      - 53:53/udp
+      - 19510:8080
+    volumes:
+      - ./sdns.conf:/sdns.conf
