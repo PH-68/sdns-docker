@@ -6,4 +6,4 @@
 
 3. Copy `nginx.conf` to the bottom of `/etc/nginx/nginx.conf`
 
-4. Copy `dns.conf` to the bottom of `/etc/nginx/conf.d/dns.conf`
+4. Copy `dns.conf` to `/etc/nginx/conf.d/dns.conf` `sudo mv dns.conf /etc/nginx/conf.d/dns.conf`
