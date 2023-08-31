@@ -10,3 +10,7 @@ services:
       - 19510:8080
     volumes:
       - ./sdns.conf:/sdns.conf
+networks:
+  sdns:
+    enable_ipv6: true
+    driver: bridge
