@@ -3,6 +3,8 @@ services:
   sdns:
     image: c1982/sdns
     container_name: sdns
+    networks:
+      - searxng
     restart: unless-stopped
     ports:
       - 53:53
@@ -14,3 +16,6 @@ networks:
   sdns:
     enable_ipv6: true
     driver: bridge
+    ipam:
+      config:
+        - subnet: fe80:s::/64
