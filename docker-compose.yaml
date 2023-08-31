@@ -4,7 +4,7 @@ services:
     image: c1982/sdns
     container_name: sdns
     networks:
-      - searxng
+      - sdns
     restart: unless-stopped
     ports:
       - 53:53
